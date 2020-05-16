@@ -6,24 +6,25 @@ const checkForSpam = function (message) {
 
     // console.log(words);
 
-    for (let result of words) {
+    const sale = words.includes('sale');
 
 
-        if () {
-            // return true;
-        } else {
-            // return false;
-        }
+    if (sale) {
+        return true;
+    } else {
+        return false;
     }
+
+
 };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-// console.log(checkForSpam('Latest technology news')); // false
+console.log(checkForSpam('Latest technology news')); // false/
 
-// console.log(checkForSpam('JavaScript weekly newsletter')); // false
+console.log(checkForSpam('JavaScript weekly newsletter')); // false
 
 console.log(checkForSpam('Get best sale offers now!')); // true
 
-// console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
