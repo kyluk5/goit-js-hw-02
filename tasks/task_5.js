@@ -2,16 +2,13 @@
 
 const checkForSpam = function (message) {
     // твой код
-    const words = message.split(' ');
+    const messageLowerCased = message.toLowerCase();
+    // console.log(messageLowerCased);
 
-    // console.log(words);
-
-    const sale = words.includes('sale');
-
-
-    if (sale) {
+    if (messageLowerCased.includes("sale") || messageLowerCased.includes("spam")) {
         return true;
-    } else {
+    }
+    else {
         return false;
     }
 
