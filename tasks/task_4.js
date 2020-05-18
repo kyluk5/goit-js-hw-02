@@ -4,18 +4,16 @@ const formatString = function (string) {
     let length = result.length;
     let format = 40;
 
-    for (let leng of result) {
-        if (length > format) {
-            let formated = result.substr(0, 40);
-            const dot = ('...');
-            let ready = formated + dot;
-            return ready;
 
-        } else {
-            return result;
-        }
+    if (length > format) {
+        let formated = result.substr(0, 40);
+        const dot = ('...');
+        let ready = formated + dot;
+        return ready;
+
+    } else {
+        return result;
     }
-
 };
 
 /*
